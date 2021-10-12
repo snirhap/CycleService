@@ -1,0 +1,24 @@
+[
+  {
+    "connector_name": "VirusTotal1",
+    "run_interval_seconds": 10,
+    "script_file_path": "VirusTotalConnector.py",
+    "params": {
+      "source_folder_path": "resources/src_files/vt1",
+      "iteration_entities_count": 15,
+      "api_key": "VIRUS_TOTAL_API_KEY_1"
+    },
+    "output_folder_path": "outputs/VirusTotal1"
+  },
+  {
+    "connector_name": "VirusTotal2",
+    "run_interval_seconds": 20,
+    "script_file_path": "VirusTotalConnector.py",
+    "params": {
+      "source_folder_path": "resources/src_files/vt2",
+      "iteration_entities_count": 30,
+      "api_key": "VIRUS_TOTAL_API_KEY_2"
+    },
+    "output_folder_path": "outputs/VirusTotal2"
+  }
+]
