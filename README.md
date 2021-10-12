@@ -14,3 +14,8 @@ Source files are JSON files that contain a list of domains to query within its r
 There are example source files, including negative cases where, for example, domains are illegal or there are no domains to process for a source file.
 
 CycleService uses a logger class which can be defined to write all outputs to the stdout or to a file by using a flag "to_file" when initiating the logger.
+
+To setup the api keys for the connector, use environment variables (See expected values in config.json), for example:
+```
+$ export VIRUS_TOTAL_API_KEY_1='123'
+```
