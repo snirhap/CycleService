@@ -1,3 +1,4 @@
+import os
 from json import loads, dumps
 from DataModels import ConnectorParams
 from sys import stdin, stdout, stderr, exit
@@ -11,7 +12,7 @@ class SubProcessInputOutputHandler(object):
             stdin_dict = loads(stdin.readline())
             result.source_folder_path = stdin_dict["source_folder_path"]
             result.iteration_entities_count = stdin_dict["iteration_entities_count"]
-            result.api_key = stdin_dict["api_key"]
+            result.api_key = os.getenv(stdin_dict["api_key"])
             return result
         except Exception as error_message:
             self.error(error_message)
